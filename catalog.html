@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+	<title>HTML Academy: Нёрдс-Каталог</title>
+</head>
+<body>
+  <header class="container">	
+    <div class="header-menu">
+      <div class="header-logo">
+        <img src="img/#" alt="Логотип nerd's">
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-cart">
+        <img src="img/#" alt="Корзина">
+        <a href="#">Корзина</a>
+      </div>
+      <div class="header-title">
+        <h1>Магазин готовых шаблонов</h1>	
+      </div>
+    </div>  
+  </header>     
+  <main class="container">
+    <div class="selection-block">
+      <form name="selection" method="post" action="http://echo.htmlacademy.ru">
+        <div class="price-range">
+          <div class="subtitle">СТОИМОСТЬ:</div>
+            <div class="price-scale">
+              <input type="range" value="0" max="15000"/>
+            </div>  
+            <div class="price-controls">  
+              <label>от <input name="min-price" type="text" value="0"></label>
+              <label>до <input name="max-price" type="text" value="15 000"></label>
+            </div>        	
+        </div>
+        <div class="selection-filters">
+          <div class="subtitle">СЕТКА:</div>
+          <div class="filter-radio">
+            <label><input name="grid-type" type="radio" value="adaptive" checked>Адаптивная</label>
+          </div>
+          <div class="filter-radio">
+            <label><input name="grid-type" type="radio" value="fixed">Фиксированная</label>
+          </div>
+          <div class="filter-radio">
+            <label><input name="grid-type" type="radio" value="rubber">Резиновая</label>
+          </div>
+        </div>
+        <div class="selection-filters">
+          <div class="subtitle">ОСОБЕННОСТИ:</div>
+          <div class="filter-chekbox">
+            <label><input name="checkbox-slider" type="checkbox" value="slider" checked>Слайдер</label>
+          </div>
+          <div class="filter-chekbox">
+            <label><input name="checkbox-advantages" type="checkbox" value="advantages">Блок преимуществ</label>
+          </div>
+          <div class="filter-chekbox">
+            <label><input name="checkbox-news" type="checkbox" value="news" checked>Новости</label>
+          </div>
+          <div class="filter-chekbox"><label>
+            <input name="checkbox-gallery" type="checkbox" value="gallery">Галерея</label>
+          </div>
+          <div class="filter-chekbox">
+            <label><input name="checkbox-cart" type="checkbox" value="cart">Корзина</label>
+          </div>
+        </div>  
+        <div class="btn">  
+          <button type="submit" class="btn-form" value="Показать">Показать</button> 
+        </div>
+      </form>
+    </div>
+    <div class="samples-block">
+      <div class="sorting">
+        <div>СОРТИРОВАТЬ</div>
+    	  <ul>
+    	    <li><a href="#">ПО ЦЕНЕ</a></li>
+    	    <li><a href="#">ПО ТИПУ</a></li>
+    	    <li><a href="#">ПО НАЗВАНИЮ</a></li>
+    	    <li><a href="#">▼</a></li>
+    	    <li><a href="#">▲</a></li>
+    	  </ul>
+      </div>
+      <div class="samples-catalog"> 
+        <article class="product"> 
+          <img src="img/#" alt="SEDONA">
+          <div>
+            <p class="samples-name">SEDONA</p> 
+            <p class="samples-info">Информационный сайт для туристов</p> 
+            <a href="#">9 900 РУБ.</a>         
+          </div>
+        </article>
+        <article class="product"> 
+          <img src="img/#" alt="PINK">
+          <div>
+            <p class="samples-name">PINK</p> 
+            <p class="samples-info">Сайт мобильного приложения</p> 
+            <a href="#">Цена</a>         
+          </div>
+        </article>
+        <article class="product"> 
+          <img src="img/#" alt="Barbershop">
+          <div>
+            <p class="samples-name">Barbershop</p> 
+            <p class="samples-info">Сайт мужской парикмахерской</p> 
+            <a href="#">Цена</a>         
+          </div>
+        </article>
+        <article class="product"> 
+          <img src="img/#" alt="MISHKA">
+          <div>
+            <p class="samples-name">MISHKA</p> 
+            <p class="samples-info">Интернет-магазин милых штучек для дома</p> 
+            <a href="#">Цена</a>         
+          </div>
+        </article>
+        <article class="product"> 
+          <img src="img/#" alt="A PLUS">
+          <div>
+            <p class="samples-name">A PLUS</p> 
+            <p class="samples-info">Сайт учебных курсов</p> 
+            <a href="#">Цена</a>         
+          </div>
+        </article>
+        <article class="product"> 
+          <img src="img/#" alt="КВАСТ">
+          <div>
+            <p class="samples-name">КВАСТ</p> 
+            <p class="samples-info">Промо-сайт производителя кваса</p> 
+            <a href="#">Цена</a>         
+          </div>
+        </article>          	
+      </div>
+      <div class="pagination">
+        <ul>
+          <li><a class="page-active"></a>1</li>   
+          <li><a href="#"></a>2</li> 
+          <li><a href="#"></a>3</li> 
+          <li><a href="#"></a>следующая</li>    	
+        </ul>      
+      </div>
+    </div>
+  </main> 
+  <footer class="container">
+    <div class="footer-map">
+      <img src="img/#" alt="Карта">
+      <div class="contacts">
+        <p class="contacts-title">Nerds design studio</p>
+        <p class="contacts-adress">
+          Адрес: г. Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contacts-phone">Телефон: +7 (812) 666-02-66</p>
+        <a class="contacts-email" href="#">Напишите нам</a>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <ul>
+        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-offer">
+      <p class="offer-slogan">Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>  
+</body>
+</html>
