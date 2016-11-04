@@ -2,36 +2,333 @@ body {
 	font-size: 16px; 
 	line-height: 24px; 		
     font-weight: 400;
-	font-family: Roboto Regular, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	background: #ffffff;
 	color: #000000;
-
 }
 
-.header-title h1 {
-    font-size: 55px;   
-	line-height: 55px;
-    font-weight: 500; 
-    font-family: Roboto Medium, Arial, sans-serif;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+	width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;	
+}
+
+header {
+	background-color: #eeeeee;
+}
+
+.header-menu {
+	margin-bottom: 80px;
+    padding-top: 1px;    
+    margin-top: 49px;
+}
+
+.header-logo {
+    float: left;
+    width: 161px;
+    min-height: 65px;
+}
+
+.header-nav {
+    float: left;
+    margin-left: 161px;
+}
+
+.header-nav li {
+    display: inline-block;
+    margin-right: 42px;
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+.header-cart {
+    float: right;
+    padding-top:26px;
+}
+
+.slider-1 {
+	/*display: none;*/
+	clear: both;
+    padding-top: 70px;
+    height: 362px;
+    width: 1160px;
+}
+
+.slider-2 {
+	display: none;
+	clear: both;
+    padding-top: 70px;
+    height: 362px;
+    width: 1160px;
+}
+
+.slider-3 {
+	display: none;
+	clear: both;
+    padding-top: 70px;
+    height: 362px;
+    width: 1160px;
+}
+
+.slider-promo img {
+	float: right;
+	width: 760px;
+	position: relative;
+}
+
+.slider-slogan {
+	float: left;
+	width: 500px;
+	position: absolute;
 }
 
 .slider-slogan h2 {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    font-family: Roboto Medium, Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
+    margin: 0px; 
 }
 
-.about-left-block h2 {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
-    font-family: Roboto Medium, Arial, sans-serif;
+.slider-slogan p{
+	width: 500px;
+}
+
+.content {
+	margin-bottom: 40px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.content-item {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+    padding-bottom: 80px;
+}
+
+.content-item:last-child {
+	margin-right: 0;
 }
 
 .content-item h3 {
 	font-size: 24px;
     line-height: 30px;
     font-weight: 700;
-    font-family: Roboto Bold, Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.about {
+	border-bottom: 2px solid #eeeeee;
+    margin-bottom: 46px;
+    padding-bottom: 76px;
+}
+
+.about-left-block h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.about-left-block {
+	float: left;
+	width: 700px;
+}
+
+.about-right-block {
+	float: right;
+	width: 400px;
+}
+
+.clients {
+	padding-bottom: 44px;		
+    margin-bottom: 80px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.clients ul {
+	padding: 0px;
+}
+
+.clients li {
+	display: inline-block;
+	margin-right: 35px;
+	width: 260px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.clients li:last-child {
+	margin-right: 0;
+}
+
+.map {
+	position: relative;
+	margin: 0 auto;
+	width: 1334px;
+}
+
+.map .contacts {
+	position: absolute;	
+	padding: 50px;
+	padding-right: 0;
+	width: 250px;
+	top: 10%;
+	left: 7%;
+	background-color: white;
+}
+
+.footer-socials {
+	float: left;
+	width: 320px;
+	margin-bottom: 60px;
+}
+
+.footer-socials ul {
+	padding-left: 10px;
+}
+
+.footer-socials li {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.footer-offer {
+	float: right;
+	width: 800px;
+	margin-bottom: 60px;
+}
+
+.header-title h1 {
+	display: inline-block;
+	padding: 44px 0px 60px 60px;
+	vertical-align: middle;
+	line-height: 55px;
+	font-size: 55px;
+	font-weight: 500;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+.header-menu-catalog {
+	padding-top: 1px;
+    margin-bottom: 26px;
+    margin-top: 49px;
+    background-color: #eeeeee;
+}
+
+.sorting h2{
+	float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sorting ul {
+	float: right;
+}
+
+.sorting li{
+	display: inline-block;
+    margin-right: 22px;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+
+.sorting .down {
+	font-size: 10px;
+	margin-left: 22px;
+	margin-right: 15px;
+}
+
+.sorting .up {
+	font-size: 10px;
+	margin-right: 0;
+}
+
+.price-scale {
+	margin-top: 45px;
+}
+
+.subtitle {
+	margin-bottom: 20px;
+}
+
+.selection-filters {
+	display: block;
+	margin-top: 4px;
+	margin-bottom: 48px;
+}
+ 
+input[type="text"] {
+	width: 80px;
+	padding: 8px 0px;
+}
+
+.selection-block {
+	float: left;
+	width: 260px;
+	margin-top: 30px;
+}
+
+.samples-block {
+	float: right;
+	width: 770px;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+
+.samples-catalog {
+	margin-top: 45px;
+	margin-bottom: 24px;
+}
+
+.product {
+	position: relative;
+	float: left;
+	width: 360px;
+	margin-right: 40px;
+	margin-bottom: 37px;
+}
+
+.product:nth-child(2n) {
+    margin-right: 0;
+}
+
+.price-popup {
+	position: absolute;	
+	display: none;
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 35px; 
+	width: 360px;
+	bottom: 0;	
+	background: #eeeeee;
+}
+
+.product:hover .price-popup {
+	display: block;
+}
+
+.pagination {
+	clear: both;
+}
+
+.pagination ul {
+	padding-left: 0px;
+}
+
+.pagination li {
+	display: inline-block;
+	min-width: 20px;
+	padding: 10px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: 500;
+	background-color: #eeeeee; /* пока временно*/
 }

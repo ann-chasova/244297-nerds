@@ -7,7 +7,7 @@
 </head>
 <body>
   <header class="container">	
-    <div class="header-menu">
+    <div class="header-menu-catalog clearfix">
       <div class="header-logo">
         <img src="img/header-logo.png" alt="Логотип nerd's">
       </div>
@@ -28,10 +28,10 @@
       </div>
     </div>  
   </header>     
-  <main class="container">
+  <main class="container clearfix">
     <div class="selection-block">
       <form name="selection" method="post" action="http://echo.htmlacademy.ru">
-        <div class="price-range">
+        <div class="selection-filters">
           <div class="subtitle">СТОИМОСТЬ:</div>
             <div class="price-scale">
               <input type="range" value="0" max="15000"/>
@@ -77,20 +77,20 @@
       </form>
     </div>
     <div class="samples-block">
-      <div class="sorting">
-        <div>СОРТИРОВАТЬ</div>
+      <div class="sorting clearfix">
+        <h2>СОРТИРОВАТЬ:</h2>
     	  <ul>
     	    <li><a href="#">ПО ЦЕНЕ</a></li>
     	    <li><a href="#">ПО ТИПУ</a></li>
     	    <li><a href="#">ПО НАЗВАНИЮ</a></li>
-    	    <li><a href="#">▼</a></li>
-    	    <li><a href="#">▲</a></li>
+    	    <li class="down"><a href="#">▼</a></li>
+    	    <li class="up"><a href="#">▲</a></li>
     	  </ul>
       </div>
       <div class="samples-catalog"> 
         <article class="product"> 
           <img src="img/img-sedona.jpg" alt="SEDONA">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">SEDONA</p> 
             <p class="samples-info">Информационный сайт для туристов</p> 
             <a href="#">9 900 РУБ.</a>         
@@ -98,7 +98,7 @@
         </article>
         <article class="product"> 
           <img src="img/img-pink.jpg" alt="PINK">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">PINK</p> 
             <p class="samples-info">Сайт мобильного приложения</p> 
             <a href="#">Цена</a>         
@@ -106,7 +106,7 @@
         </article>
         <article class="product"> 
           <img src="img/img-barbershop.jpg" alt="Barbershop">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">Barbershop</p> 
             <p class="samples-info">Сайт мужской парикмахерской</p> 
             <a href="#">Цена</a>         
@@ -114,7 +114,7 @@
         </article>
         <article class="product"> 
           <img src="img/img-mishka.jpg" alt="MISHKA">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">MISHKA</p> 
             <p class="samples-info">Интернет-магазин милых штучек для дома</p> 
             <a href="#">Цена</a>         
@@ -122,7 +122,7 @@
         </article>
         <article class="product"> 
           <img src="img/img-aplus.jpg" alt="A PLUS">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">A PLUS</p> 
             <p class="samples-info">Сайт учебных курсов</p> 
             <a href="#">Цена</a>         
@@ -130,7 +130,7 @@
         </article>
         <article class="product"> 
           <img src="img/img-kvast.jpg" alt="КВАСТ">
-          <div>
+          <div class="price-popup">
             <p class="samples-name">КВАСТ</p> 
             <p class="samples-info">Промо-сайт производителя кваса</p> 
             <a href="#">Цена</a>         
@@ -139,27 +139,27 @@
       </div>
       <div class="pagination">
         <ul>
-          <li><a class="page-active"></a>1</li>   
-          <li><a href="#"></a>2</li> 
-          <li><a href="#"></a>3</li> 
-          <li><a href="#"></a>следующая</li>    	
+          <li><a class="page-active">1</a></li>   
+          <li><a href="#">2</a></li> 
+          <li><a href="#">3</a></li> 
+          <li><a href="#">следующая</a></li>    	
         </ul>      
       </div>
     </div>
   </main> 
-  <footer class="container">
-    <div class="footer-map">
-      <img src="img/#" alt="Карта">
-      <div class="contacts">
-        <p class="contacts-title">Nerds design studio</p>
-        <p class="contacts-adress">
-          Адрес: г. Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p class="contacts-phone">Телефон: +7 (812) 666-02-66</p>
-        <a class="contacts-email" href="#">Напишите нам</a>
-      </div>
+  <div class="map">
+    <img src="img/map.jpg" alt="Карта">
+    <div class="contacts">
+      <p class="contacts-title">Nerds design studio</p>
+      <p class="contacts-adress">
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+      <a class="contacts-email" href="#">Напишите нам</a>
     </div>
+  </div>
+  <footer class="container clearfix">
     <div class="footer-socials">
       <ul>
         <li><a href="#">Вконтакте</a></li>
@@ -171,6 +171,6 @@
       <p class="offer-slogan">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
-  </footer>  
+  </footer>
 </body>
-</html>
+</html> 
