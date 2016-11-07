@@ -112,7 +112,7 @@ header {
     padding-bottom: 80px;
 }
 
-.content-item:last-child {
+.content-item:nth-child(3n) {
 	margin-right: 0;
 }
 
@@ -154,11 +154,12 @@ header {
 
 .clients ul {
 	padding: 0px;
+	font-size: 0px;
 }
 
 .clients li {
 	display: inline-block;
-	margin-right: 35px;
+	margin-right: 40px;
 	width: 260px;
 	text-align: center;
 	vertical-align: middle;
@@ -169,18 +170,18 @@ header {
 }
 
 .map {
-	position: relative;
-	margin: 0 auto;
-	width: 1334px;
+	min-height: 415px;
+	background: url(../img/map.jpg) no-repeat center;
+	margin-bottom: 38px;
 }
 
 .map .contacts {
-	position: absolute;	
+	position: relative;	
+	display: block;
 	padding: 50px;
 	padding-right: 0;
 	width: 250px;
-	top: 10%;
-	left: 7%;
+	top: 54px;
 	background-color: white;
 }
 
@@ -206,9 +207,13 @@ header {
 	margin-bottom: 60px;
 }
 
+.header-title {
+	clear: both;
+}
+
 .header-title h1 {
 	display: inline-block;
-	padding: 44px 0px 60px 60px;
+	padding: 20px 0px 60px 216px;
 	vertical-align: middle;
 	line-height: 55px;
 	font-size: 55px;
@@ -231,6 +236,9 @@ header {
 
 .sorting ul {
 	float: right;
+	font-size: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .sorting li{
