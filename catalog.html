@@ -2,176 +2,222 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-	  <title>HTML Academy: Нёрдс-Каталог</title>
+	  <title>Дизайн-студия Nёrd's: Магазин</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="container">	
+  <header class="header-catalog">	
+    <div class="container">
     <div class="header-menu-catalog clearfix">
-      <div class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="img/header-logo.png" alt="Логотип nerd's">
-      </div>
+      </a>
       <nav class="header-nav">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a class="active" href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="header-cart">
-        <img src="img/#" alt="Корзина">
-        <a href="#">Корзина</a>
-      </div>
+          <a href="#">Корзина</a>
+        </div>
       <div class="header-title">
         <h1>Магазин готовых шаблонов</h1>	
       </div>
-    </div>  
+    </div> 
+    </div> 
   </header>     
   <main class="container clearfix">
     <div class="selection-block">
-      <form name="selection" method="post" action="http://echo.htmlacademy.ru">
+      <form name="selection" method="get" action="#">
         <div class="selection-filters">
-          <div class="subtitle">СТОИМОСТЬ:</div>
-            <div class="price-scale">
-              <input type="range" value="0" max="15000"/>
-            </div>  
-            <div class="price-controls">  
-              <label>от <input name="min-price" type="text" value="0"></label>
-              <label>до <input name="max-price" type="text" value="15 000"></label>
+          <div class="subtitle">Стоимость:</div>
+           <div class="price-scale">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <label>от <input class="min-price" name="from" type="text" value="0"></label>
+                <label>до <input class="max-price" name="till" type="text" value="15000"></label>
+              </div>
             </div>        	
-        </div>
-        <div class="selection-filters">
-          <div class="subtitle">СЕТКА:</div>
-          <div class="filter-radio">
-            <label><input name="grid-type" type="radio" value="adaptive" checked>Адаптивная</label>
-          </div>
-          <div class="filter-radio">
-            <label><input name="grid-type" type="radio" value="fixed">Фиксированная</label>
-          </div>
-          <div class="filter-radio">
-            <label><input name="grid-type" type="radio" value="rubber">Резиновая</label>
           </div>
         </div>
         <div class="selection-filters">
-          <div class="subtitle">ОСОБЕННОСТИ:</div>
+          <div class="subtitle">Сетка:</div>
+          <div class="filter-radio">
+            <input name="grid-type" type="radio" value="adaptive" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </div>
+          <div class="filter-radio">
+            <input name="grid-type" type="radio" value="fixed" id="fixed">
+            <label for="fixed">Фиксированная</label>
+          </div>
+          <div class="filter-radio">
+            <input name="grid-type" type="radio" value="rubber" id="rubber">
+            <label for="rubber">Резиновая</label>
+          </div>
+        </div>
+        <div class="selection-filters">
+          <div class="subtitle">Особенности:</div>
           <div class="filter-chekbox">
-            <label><input name="checkbox-slider" type="checkbox" value="slider" checked>Слайдер</label>
+            <input name="checkbox-slider" type="checkbox" value="slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
           </div>
           <div class="filter-chekbox">
-            <label><input name="checkbox-advantages" type="checkbox" value="advantages">Блок преимуществ</label>
+            <input name="checkbox-advantages" type="checkbox" value="advantages" id="advantages">
+            <label for="advantages">Блок преимуществ</label>
           </div>
           <div class="filter-chekbox">
-            <label><input name="checkbox-news" type="checkbox" value="news" checked>Новости</label>
-          </div>
-          <div class="filter-chekbox"><label>
-            <input name="checkbox-gallery" type="checkbox" value="gallery">Галерея</label>
+            <input name="checkbox-news" type="checkbox" value="news" id="news" checked>
+            <label for="news">Новости</label>
           </div>
           <div class="filter-chekbox">
-            <label><input name="checkbox-cart" type="checkbox" value="cart">Корзина</label>
+            <input name="checkbox-gallery" type="checkbox" value="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+          </div>
+          <div class="filter-chekbox">
+            <input name="checkbox-cart" type="checkbox" value="cart" id="cart">
+            <label for="cart">Корзина</label>
           </div>
         </div>  
         <div class="btn">  
-          <button type="submit" class="btn-form" value="Показать">Показать</button> 
+          <button type="submit" class="submit-btn" value="Показать">Показать</button> 
         </div>
       </form>
     </div>
     <div class="samples-block clearfix">
       <div class="sorting clearfix">
-        <h2>СОРТИРОВАТЬ:</h2>
+        <h2>Сортировать:</h2>
     	  <ul>
-    	    <li><a href="#">ПО ЦЕНЕ</a></li>
-    	    <li><a href="#">ПО ТИПУ</a></li>
-    	    <li><a href="#">ПО НАЗВАНИЮ</a></li>
-    	    <li class="down"><a href="#">▼</a></li>
+    	    <li class="sorting-current"><a href="#">По цене</a></li>
+    	    <li><a href="#">По типу</a></li>
+    	    <li><a href="#">По названию</a></li>
+    	    <li class="sorting-current down"><a href="#">▼</a></li>
     	    <li class="up"><a href="#">▲</a></li>
     	  </ul>
       </div>
-      <div class="samples-catalog"> 
+      <div class="samples-catalog clearfix"> 
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-sedona.jpg" alt="SEDONA">
           <div class="price-popup">
             <p class="samples-name">SEDONA</p> 
-            <p class="samples-info">Информационный сайт для туристов</p> 
-            <a href="#">9 900 РУБ.</a>         
+            <p class="samples-info">Информационный сайт для туристов</p><a class="button" href="#">9 900 РУБ.</a>         
           </div>
         </article>
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-pink.jpg" alt="PINK">
           <div class="price-popup">
             <p class="samples-name">PINK</p> 
             <p class="samples-info">Сайт мобильного приложения</p> 
-            <a href="#">Цена</a>         
+            <a class="button" href="#">9 900 РУБ.</a>          
           </div>
         </article>
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-barbershop.jpg" alt="Barbershop">
           <div class="price-popup">
             <p class="samples-name">Barbershop</p> 
             <p class="samples-info">Сайт мужской парикмахерской</p> 
-            <a href="#">Цена</a>         
+            <a class="button" href="#">9 900 РУБ.</a>          
           </div>
         </article>
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-mishka.jpg" alt="MISHKA">
           <div class="price-popup">
             <p class="samples-name">MISHKA</p> 
             <p class="samples-info">Интернет-магазин милых штучек для дома</p> 
-            <a href="#">Цена</a>         
+            <a class="button" href="#">9 900 РУБ.</a>         
           </div>
         </article>
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-aplus.jpg" alt="A PLUS">
           <div class="price-popup">
             <p class="samples-name">A PLUS</p> 
             <p class="samples-info">Сайт учебных курсов</p> 
-            <a href="#">Цена</a>         
+            <a class="button" href="#">9 900 РУБ.</a>        
           </div>
         </article>
         <article class="product"> 
+          <div class="product-header">
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+            <div class="dot-controls"></div>
+          </div>
           <img src="img/img-kvast.jpg" alt="КВАСТ">
           <div class="price-popup">
             <p class="samples-name">КВАСТ</p> 
             <p class="samples-info">Промо-сайт производителя кваса</p> 
-            <a href="#">Цена</a>         
+            <a class="button" href="#">9 900 РУБ.</a>         
           </div>
         </article>          	
       </div>
       <div class="pagination">
         <ul>
-          <li><a class="page-active">1</a></li>   
+          <li class="page-active"><a>1</a></li>   
           <li><a href="#">2</a></li> 
           <li><a href="#">3</a></li> 
-          <li><a href="#">следующая</a></li>    	
-        </ul>      
+          <li class="page-next"><a href="#">следующая</a></li>    	
+        </ul>          
       </div>
     </div>
   </main> 
   <div class="map">
+    <div id="map"></div>
     <div class="container">
       <div class="contacts">
-        <p class="contacts-title">Nerds design studio</p>
+        <p class="contacts-title">Nёrds design studio</p>
         <p class="contacts-adress">
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8
         </p>
         <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-        <a class="contacts-email" href="#">Напишите нам</a>
+        <a class="contacts-btn" href="#">Напишите нам</a>
       </div>
     </div>
   </div>
   <footer class="container clearfix">
     <div class="footer-socials">
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
+      <a class="btn-socials vk" href="#"></a>
+      <a class="btn-socials fb" href="#"></a>
+      <a class="btn-socials ig" href="#"></a>
     </div>
     <div class="footer-offer">
       <p class="offer-slogan">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JJRjCrrvEL2O3cJ6cGhFNGhdblnu3IA8&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=map"></script>
 </body>
 </html> 
