@@ -949,9 +949,11 @@ input[type="checkbox"]:disabled + label:hover::before {
 }
 
 .samples-name {
+	display: inline-block;
 	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-weight: 700;
 	color: #000000;
 	margin-top: 25px;
@@ -967,16 +969,16 @@ input[type="checkbox"]:disabled + label:hover::before {
     overflow: hidden;
 }
 
-.price-popup a {
+.price-popup .button {
 	margin-top: 30px;
 	background-color: #fb565a;
 }
 
-.price-popup a:hover {
+.price-popup .button:hover {
 	background-color: #e74246;
 }
 
-.price-popup a:active {
+.price-popup .button:active {
 	background-color: #d7373b;
 	color: #e37376;
 	box-shadow: inset 0px 3px rgba(0, 1, 1, 0);
