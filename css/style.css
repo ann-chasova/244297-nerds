@@ -42,7 +42,7 @@ img {
 }
 
 .header-main {
-	margin-bottom: 81px;
+	margin-bottom: 78px;
 	padding-top: 1px;   
 	background-color: #eeeeee;
 }
@@ -68,7 +68,7 @@ img {
 .header-nav {
 	float: left;
 	margin-left: 161px;
-	/*width: 522px;*/
+	width: 522px;
 }
 
 .header-nav li {
@@ -164,9 +164,7 @@ img {
 
 
 .slider-slogan {
-	float: left;
 	width: 520px;
-	position: absolute;
 }
 
 .slider-slogan h2 {	
@@ -183,15 +181,13 @@ img {
 	width: 410px;
 	margin-top: 28px;	
 	line-height: 24px;
-	max-height: 48px;
-	overflow: auto;
 }
 
 .slider-1 {
 	display: none;
 	clear: both;
 	padding-top: 60px;
-	height: 362px;
+	min-height: 362px;
 	width: 1160px;
 	background: url("../img/slider-1.jpg") no-repeat right top;
 }
@@ -200,7 +196,7 @@ img {
 	display: none;
 	clear: both;
 	padding-top: 60px;
-	height: 362px;
+	min-height: 362px;
 	width: 1160px;
 	background: url("../img/slider-2.jpg") no-repeat right top;
 }
@@ -209,7 +205,7 @@ img {
 	display: none;
 	clear: both;
 	padding-top: 60px;
-	height: 362px;
+	min-height: 362px;
 	width: 1160px;
 	background: url("../img/slider-3.jpg") no-repeat right top;
 }
@@ -224,6 +220,10 @@ img {
 
 #toggle-3:checked ~ .slider-3 {
 	display: block;
+}
+
+.slider-btn {
+	margin-bottom: 80px;
 }
 
 .slider-btn, 
@@ -262,7 +262,7 @@ img {
 }
 
 .content {
-	margin-bottom: 42px;
+	margin-bottom: 36px;
 	border-bottom: 2px solid #eeeeee;
 }
 
